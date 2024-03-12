@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Matter-medium";
+  src: url("../assets/fonts/Matter/Matter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Matter";
+  src: url("../assets/fonts/Matter/Matter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Matter-bold";
+  src: url("../assets/fonts/Matter/Matter-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../assets/fonts/Futura/futura\ extra\ black\ font.ttf");
+}
