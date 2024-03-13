@@ -1,6 +1,8 @@
 import Hero from "@/common/components/Hero/Hero";
 import Navbar from "@/common/components/Navbar/Navbar";
+import Quote from "@/common/components/Quote/Quote";
 import Services from "@/common/components/Services/Services";
+import Works from "@/common/components/Works/Works";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <Works />
+      <Quote />
     </main>
   );
 }

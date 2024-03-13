@@ -4,6 +4,8 @@ import clean from "@/assets/images/clean.svg";
 import secure from "@/assets/images/secure.svg";
 import maintain from "@/assets/images/maintain.svg";
 import iconsM from "@/assets/images/iconsM.svg";
+import work from "@/assets/images/work.svg";
+import flower from "@/assets/images/flower.svg";
 
 export const heroAssets = {
   lines,
@@ -12,4 +14,6 @@ export const heroAssets = {
   clean,
   secure,
   maintain,
+  work,
+  flower,
 };
