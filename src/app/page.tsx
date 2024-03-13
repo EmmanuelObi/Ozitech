@@ -1,3 +1,5 @@
+import Contact from "@/common/components/Contact/Contact";
+import Footer from "@/common/components/Footer/Footer";
 import Hero from "@/common/components/Hero/Hero";
 import Navbar from "@/common/components/Navbar/Navbar";
 import Quote from "@/common/components/Quote/Quote";
@@ -13,6 +15,8 @@ export default function Home() {
       <Services />
       <Works />
       <Quote />
+      <Contact />
+      <Footer />
     </main>
   );
 }

@@ -17,6 +17,9 @@ const config: Config = {
       borderWidth: {
         1: "1px",
       },
+      borderRadius: {
+        contact: "44px",
+      },
       colors: {
         "primary-blue": "#1452E4",
         "primary-grey": "#404241",
@@ -37,6 +40,14 @@ const config: Config = {
         "card-border": "#323232",
         "placeholder-color": "#D1D1D6",
         "label-color": "#3F3F46",
+        "contact-blue": "#1452E4",
+        "contact-grey": "#CDD5DF",
+        "footer-grey": "#EAECF0",
+        "rights-grey": "#B9BCC8",
+        "icon-grey": "#98A2B3",
+        "footer-border": "#202939",
+        "footer-bg": "#181A1A",
+        "rights-bg": "#121313",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
