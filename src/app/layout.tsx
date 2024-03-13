@@ -2,11 +2,6 @@ import type { Metadata } from "next";
 import { DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
-export const DM_Serif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-
 export const metadata: Metadata = {
   title: "Ozi Technologies",
   description:
