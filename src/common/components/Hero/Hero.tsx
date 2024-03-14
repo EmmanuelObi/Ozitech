@@ -40,7 +40,7 @@ const Hero = () => {
             1000, // wait 1s before replacing "website" with "iOS app"
             "iOS app",
             1000,
-            "andriod app",
+            "android app",
             1000,
             "cross platform app",
             1000,
