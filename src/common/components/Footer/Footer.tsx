@@ -5,7 +5,7 @@ import { heroAssets } from "@/assets/images";
 const Footer = () => {
   return (
     <div id="footer" className="w-full">
-      <div className="w-full bg-footer-bg py-10 px-5 lg:px-0">
+      {/* <div className="w-full bg-footer-bg py-10 px-5 lg:px-0">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <div className="flex flex-col items-start justify-center">
             <p className="text-white my-4 text-xl md:text-xl text-left font-medium font-matter-medium">
@@ -19,7 +19,7 @@ const Footer = () => {
             Contact support
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="w-full bg-rights-bg py-16 lg:py-16 px-5 lg:px-0">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-end justify-between border-t-1 border-footer-border pt-7">
           <div className="flex items-center justify-center">

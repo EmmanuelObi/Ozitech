@@ -31,14 +31,18 @@ const Hero = () => {
         priority
         alt="icons"
       />
-      <p className="text-black text-3xl md:text-6xl text-center font-medium font-matter-medium">
-        We believe you deserve <br /> the best{" "}
+      <p className="text-black w-2/3 md:w-full text-3xl md:text-6xl text-center font-medium font-matter-medium">
+        We believe you deserve {!isBreakpoint && <br />} the best{" "}
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
             "website",
-            1000, // wait 1s before replacing "website" with "mobile application"
-            "application",
+            1000, // wait 1s before replacing "website" with "iOS app"
+            "iOS app",
+            1000,
+            "andriod app",
+            1000,
+            "cross platform app",
             1000,
           ]}
           wrapper="span"
@@ -52,9 +56,11 @@ const Hero = () => {
         online presence and engage <br /> customers through our advanced mobile
         apps and websites.
       </p>
-      <button className="hover:bg-blue-600 transition bg-primary-blue text-white font-matter font-normal text-base w-32 h-12 rounded-full">
-        Explore
-      </button>
+      <a href="#quotes" className="z-10">
+        <button className="hover:bg-blue-600 transition bg-primary-blue text-white font-matter font-normal text-base w-32 h-12 rounded-full">
+          Get quote
+        </button>
+      </a>
     </div>
   );
 };
