@@ -23,17 +23,26 @@ const Footer = () => {
       <div className="w-full bg-rights-bg py-16 lg:py-16 px-5 lg:px-0">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-end justify-between border-t-1 border-footer-border pt-7">
           <div className="flex items-center justify-center">
-            <a href="#">
+            <a
+              href="https://www.instagram.com/ozitech__?igsh=MWwzMWJjbjZ2bG9ldg=="
+              target="_blank"
+            >
               <Image className="mx-2" src={heroAssets.twitter} alt="twitter" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/ozitech__?igsh=MWwzMWJjbjZ2bG9ldg=="
+              target="_blank"
+            >
               <Image
                 className="mx-2"
                 src={heroAssets.linkedin}
                 alt="linkedin"
               />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/ozitech__?igsh=MWwzMWJjbjZ2bG9ldg=="
+              target="_blank"
+            >
               <Image className="mx-2" src={heroAssets.insta} alt="instagram" />
             </a>
           </div>

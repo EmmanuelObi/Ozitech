@@ -5,14 +5,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { heroAssets } from "@/assets/images";
 import PhoneInput from "react-phone-number-input";
+import emailjs from "@emailjs/browser";
+import { toast, Bounce } from "react-toastify";
 
 const Quote = () => {
   const [formData, setFormData] = useState<any>({
-    firstName: "",
+    first_name: "",
     email: "",
     message: "",
   });
   const [phone, setPhone] = useState();
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (event: any) => {
     const { name, value } = event.target;
@@ -21,15 +24,53 @@ const Quote = () => {
       [name]: value,
     }));
   };
-
-  const formIsValid = formData.firstName && formData.email && formData.message;
+  const formIsValid = formData.first_name && formData.email && formData.message;
   const submit = () => {
     if (!formIsValid) {
       return;
     }
-    alert(
-      `${formData.firstName}, ${formData.email}, ${formData.message}, ${phone}`
-    );
+    setLoading(true);
+    const templateParams = { ...formData, phone };
+    emailjs
+      .send("service_4359vlj", "template_1udmb4l", templateParams, {
+        publicKey: "h4Ty1Z7NivMNHmmiu",
+      })
+      .then(
+        (response) => {
+          toast.success("Quote Request Sent!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          });
+          setFormData(() => ({
+            first_name: "",
+            email: "",
+            message: "",
+          }));
+          setPhone(() => undefined);
+          setLoading(false);
+        },
+        (err) => {
+          toast.error("Error Occured!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          });
+          setLoading(false);
+        }
+      );
   };
 
   return (
@@ -56,12 +97,12 @@ const Quote = () => {
           </label>
           <input
             type="text"
-            name="firstName"
+            name="first_name"
             id="firstname"
             required
             autoComplete="given-name"
             placeholder="Enter first name"
-            value={formData.firstName}
+            value={formData.first_name}
             onChange={handleInputChange}
             className="w-full rounded-xl h-12 my-2 pl-5 border-1 border-pill-border placeholder:text-placeholder-color placeholder:text-sm"
           />
@@ -104,9 +145,17 @@ const Quote = () => {
           />
           <button
             onClick={submit}
-            className="mt-6 hover:bg-blue-600 transition bg-primary-blue text-white font-matter font-normal text-base min-w-32 h-12 px-6 rounded-full"
+            className="mt-6 flex items-center justify-center text-center hover:bg-blue-600 transition bg-primary-blue text-white font-matter font-normal text-base min-w-32 h-12 px-6 rounded-full"
+            disabled={loading}
           >
-            Send quote request
+            {loading ? (
+              <svg
+                className="text-center animate-spin h-6 w-6 rounded-full border-1 border-dashed border-white bg-transparent"
+                viewBox="0 0 24 24"
+              ></svg>
+            ) : (
+              "Send quote request"
+            )}
           </button>
         </div>
       </div>
