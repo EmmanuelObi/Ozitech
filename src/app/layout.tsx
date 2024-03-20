@@ -14,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="font-matter">{children}</body>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
+      <body className="font-matter" suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   );
 }

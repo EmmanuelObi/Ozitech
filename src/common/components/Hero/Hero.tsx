@@ -56,7 +56,7 @@ const Hero = () => {
         online presence and engage <br /> customers through our advanced mobile
         apps and websites.
       </p>
-      <a href="#quotes" className="z-10">
+      <a href="#quotes">
         <button className="hover:bg-blue-600 transition bg-primary-blue text-white font-matter font-normal text-base w-32 h-12 rounded-full">
           Get quote
         </button>

@@ -13,6 +13,8 @@ import ballM from "@/assets/images/ballM.svg";
 import insta from "@/assets/images/insta.svg";
 import twitter from "@/assets/images/twitter.svg";
 import linkedin from "@/assets/images/linkedin.svg";
+import logo from "@/assets/images/logo_buffer.png";
+import burger from "@/assets/images/burger.svg";
 
 export const heroAssets = {
   lines,
@@ -30,4 +32,6 @@ export const heroAssets = {
   insta,
   twitter,
   linkedin,
+  logo,
+  burger,
 };
