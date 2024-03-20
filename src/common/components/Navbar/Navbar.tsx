@@ -47,7 +47,7 @@ const Navbar = ({ handleMobileNav }: any) => {
             src={heroAssets.burger}
             alt="Logo"
             priority
-            className="md:hidden block cursor-pointer"
+            className=" md:hidden block cursor-pointer"
             onClick={handleMobileNav}
           />
         </div>

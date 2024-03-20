@@ -15,6 +15,7 @@ import twitter from "@/assets/images/twitter.svg";
 import linkedin from "@/assets/images/linkedin.svg";
 import logo from "@/assets/images/logo_buffer.png";
 import burger from "@/assets/images/burger.svg";
+import cancel from "@/assets/images/cancel.webp";
 
 export const heroAssets = {
   lines,
@@ -34,4 +35,5 @@ export const heroAssets = {
   linkedin,
   logo,
   burger,
+  cancel,
 };

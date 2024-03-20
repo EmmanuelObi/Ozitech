@@ -32,8 +32,9 @@ export default function Home() {
       {mobileNav && (
         <div className="bg-white z-10 h-screen w-full fixed top-0 left-0 flex flex-col items-end">
           <Image
-            src={heroAssets.burger}
+            src={heroAssets.cancel}
             onClick={handleChange}
+            height={30}
             alt="Logo"
             priority
             className="self-end mr-5 mt-5 cursor-pointer"
