@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center">
-      <Navbar handleMobileNav={handleChange} />
+      <Navbar handleChange={handleChange} />
       <Hero />
       <Services />
       {/* <Works /> */}
@@ -30,7 +30,11 @@ export default function Home() {
       <Footer />
       <ToastContainer />
       {mobileNav && (
-        <div className="bg-white z-10 h-screen w-full fixed top-0 left-0 flex flex-col items-end">
+        <div
+          className={`bg-white  h-screen w-full fixed top-0 left-0 flex flex-col items-end ${
+            mobileNav ? "z-10" : ""
+          }`}
+        >
           <Image
             src={heroAssets.cancel}
             onClick={handleChange}

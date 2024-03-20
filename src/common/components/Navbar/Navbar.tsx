@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { heroAssets } from "@/assets/images";
 
-const Navbar = ({ handleMobileNav }: any) => {
+const Navbar = ({ handleChange }: any) => {
   return (
     <>
-      <div className="absolute top-0 w-full bg-white">
+      <div className="absolute z-10 top-0 w-full bg-white">
         <div className="w-full bg-white py-6 max-w-6xl px-6 lg:px-0 flex items-center mx-auto justify-between border-b-2 border-nav-border">
           <div className="flex items-center justify-between md:min-w-72">
             <a href="/">
@@ -48,7 +48,7 @@ const Navbar = ({ handleMobileNav }: any) => {
             alt="Logo"
             priority
             className=" md:hidden block cursor-pointer"
-            onClick={handleMobileNav}
+            onClick={handleChange}
           />
         </div>
       </div>
