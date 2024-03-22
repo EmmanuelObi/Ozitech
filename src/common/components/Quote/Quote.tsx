@@ -80,9 +80,9 @@ const Quote = () => {
     >
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start justify-between px-6 lg:px-0">
         <div className="lg:w-1/2 w-full">
-          <button className="font-normal border-1 border-pill-border text-pill-grey transition bg-transparent font-matter text-base w-28 h-12 rounded-full">
+          {/* <button className="font-normal border-1 border-pill-border text-pill-grey transition bg-transparent font-matter text-base w-28 h-12 rounded-full">
             Services
-          </button>
+          </button> */}
           <p className="text-black my-3 text-xl md:text-3xl text-left font-medium font-matter-medium">
             Get a quote
           </p>
