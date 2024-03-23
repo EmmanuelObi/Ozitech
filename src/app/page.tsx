@@ -32,7 +32,7 @@ export default function Home() {
       {mobileNav && (
         <div
           className={`bg-white  h-screen w-full fixed top-0 left-0 flex flex-col items-end ${
-            mobileNav ? "z-10" : ""
+            mobileNav ? "z-30" : ""
           }`}
         >
           <Image
