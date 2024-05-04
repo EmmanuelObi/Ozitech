@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { heroAssets } from "@/assets/images";
@@ -5,8 +7,8 @@ import { heroAssets } from "@/assets/images";
 const Navbar = ({ handleChange }: any) => {
   return (
     <>
-      <div className="absolute z-10 top-0 w-full bg-white">
-        <div className="w-full bg-white py-6 max-w-6xl px-6 lg:px-0 flex items-center mx-auto justify-between border-b-2 border-nav-border">
+      <div className="fixed z-10 top-0 w-full bg-transparent">
+        <div className="w-full bg-transparent py-6 max-w-6xl px-6 lg:px-0 flex items-center mx-auto justify-between border-b-2 border-nav-border">
           <div className="flex items-center justify-between md:min-w-72">
             <a href="/">
               <p className="font-normal ml-4 text-base text-primary-blue font-futura  cursor-pointer">
@@ -19,17 +21,18 @@ const Navbar = ({ handleChange }: any) => {
                 />
               </p>
             </a>
-            <a
-              href="#home"
-              className="text-secondary-grey font-normal text-base hidden md:block"
-            >
-              Home
-            </a>
+
             <a
               href="#services"
               className="text-secondary-grey font-normal text-base hidden md:block"
             >
               Services
+            </a>
+            <a
+              href="#contact"
+              className="text-secondary-grey font-normal text-base hidden md:block"
+            >
+              Contact Us
             </a>
             {/* <a
             href="#portfolio"

@@ -32,7 +32,7 @@ const Contact = () => {
             Send an email
           </p>
           <p className="text-contact-grey lg:px-0 text-sm md:text-md font-normal text-left">
-            Ozitechsol@gmail.com
+            support@ozitech.co.uk
           </p>
         </div>
         <div className="w-full lg:w-1/4 flex flex-col items-center my-5 lg:items-start justify-between ">

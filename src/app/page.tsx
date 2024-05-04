@@ -38,25 +38,24 @@ export default function Home() {
           <Image
             src={heroAssets.cancel}
             onClick={handleChange}
-            height={30}
             alt="Logo"
             priority
-            className="self-end mr-5 mt-5 cursor-pointer"
+            className="size-6 self-end mr-7 mt-10 cursor-pointer"
           />
           <div className="flex flex-col items-center w-full min-h-96 justify-evenly">
-            <a
-              href="#home"
-              onClick={handleChange}
-              className="text-secondary-grey font-normal text-2xl hover:text-primary-blue"
-            >
-              Home
-            </a>
             <a
               href="#services"
               onClick={handleChange}
               className="text-secondary-grey font-normal text-2xl hover:text-primary-blue"
             >
               Services
+            </a>
+            <a
+              href="#contact"
+              onClick={handleChange}
+              className="text-secondary-grey font-normal text-2xl hover:text-primary-blue"
+            >
+              Contact Us
             </a>
           </div>
         </div>
