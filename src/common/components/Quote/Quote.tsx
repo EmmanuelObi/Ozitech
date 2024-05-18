@@ -87,8 +87,10 @@ const Quote = () => {
             Get a quote
           </p>
           <p className="text-services-grey lg:px-0 text-sm md:text-base font-normal text-left">
-            We have been waiting to hear from you, send in your <br /> quote
-            request and let’s talk from there
+            We have been waiting to hear from you, kindly send in your quote{" "}
+            {""}
+            <br className="lg:block hidden" />
+            request and we&apos;ll get back to you within 24 hours.
           </p>
         </div>
         <div className="mt-8 lg:mt-0 lg:w-1/2 w-full flex flex-col items-start justify-center">

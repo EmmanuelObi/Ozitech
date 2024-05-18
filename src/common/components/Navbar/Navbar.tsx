@@ -7,7 +7,7 @@ import { heroAssets } from "@/assets/images";
 const Navbar = ({ handleChange }: any) => {
   return (
     <>
-      <div className="fixed z-10 top-0 w-full bg-transparent">
+      <div className="lg:fixed z-10 top-0 w-full bg-transparent">
         <div className="w-full bg-transparent py-6 max-w-6xl px-6 lg:px-0 flex items-center mx-auto justify-between border-b-2 border-nav-border">
           <div className="flex items-center justify-between md:min-w-72">
             <a href="/">
